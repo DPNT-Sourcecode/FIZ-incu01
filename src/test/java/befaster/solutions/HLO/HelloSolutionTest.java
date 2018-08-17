@@ -31,7 +31,8 @@ public class HelloSolutionTest {
     //
     @Test
     public void hello() {
-        String friendsName = new String();
-        assertThat(helloSolution.hello(friendsName), equalTo("Hello, World!"));
+        String friendName = "John";
+        String result = "Hello, " + friendName + "!";
+        assertThat(helloSolution.hello(friendName), equalTo(result));
     }
 }
