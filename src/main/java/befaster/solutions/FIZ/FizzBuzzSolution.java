@@ -39,14 +39,15 @@ public class FizzBuzzSolution {
             } else {
                 returnValue.append("fizz buzz");
             }
-        } //Fizz deluxe / Fizz fake deluxe
+        }
+        //Fizz deluxe / Fizz fake deluxe
         else if (number % 3 == 0 && containsThree) {
             if (number % 2 == 0) {
                 returnValue.append("fizz deluxe");
             } else {
                 returnValue.append("fizz fake deluxe");
             }
-        } else if (number % 3 == 0 || containsThree) {
+        } else if (number % 3 == 0 ) {
             if (containsThree) {
                 if (number % 2 == 0) {
                     returnValue.append("fizz deluxe");
@@ -56,7 +57,18 @@ public class FizzBuzzSolution {
             } else {
                 returnValue.append("fizz");
             }
-        } else if (number % 5 == 0 && containsFive) {
+        } else if (containsThree) {
+            if (number % 3 == 0) {
+                if (number % 2 == 0) {
+                    returnValue.append("fizz deluxe");
+                } else {
+                    returnValue.append("fizz fake deluxe");
+                }
+            } else {
+                returnValue.append("fizz");
+            }
+        }
+        else if (number % 5 == 0 && containsFive) {
             if (number % 2 == 0) {
                 returnValue.append("buzz deluxe");
             } else {
