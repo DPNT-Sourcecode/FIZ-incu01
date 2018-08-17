@@ -44,6 +44,9 @@ public class FizzBuzzSolution {
         }
         
         if (isDeluxe) {
+            if (notFizzBuss) {
+                return "deluxe";
+            }
             returnValue.append(" ").append("deluxe");
         }
         return returnValue.toString();
