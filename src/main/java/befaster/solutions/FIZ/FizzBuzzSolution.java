@@ -74,7 +74,7 @@ public class FizzBuzzSolution {
             } else {
                 returnValue.append("buzz fake deluxe");
             }
-        } else if (number % 5 == 0 || containsFive) {
+        } else if (number % 5 == 0) {
             if (containsFive) {
                 if (number % 2 == 0) {
                     returnValue.append("buzz deluxe");
@@ -84,7 +84,7 @@ public class FizzBuzzSolution {
             } else {
                 returnValue.append("buzz");
             }
-        } else if ( containsFive) {
+        } else if (containsFive) {
             if (number % 5 == 0) {
                 if (number % 2 == 0) {
                     returnValue.append("buzz deluxe");
