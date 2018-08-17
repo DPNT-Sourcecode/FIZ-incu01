@@ -1,0 +1,17 @@
+FIZ_R3
+ROUND 3 - Fizz Buzz Deluxe
+People like "fizz buzz" but the upper class of the society wants more. Let's create a "Deluxe" version !
+It goes like this, we are going to add a new rule:
+  - A number is considered to be "deluxe" if it is greater than 10 and all the digits are identical
+  - A number can be "fizz", "buzz" and "deluxe" at the same time. If this happens then write "fizz buzz deluxe"
+
+Notes: 
+ - You do not have to test for illegal input.
+ - The input numbers are between 1-9999
+
+In order to complete the round you need to implement the following method:
+     fizz_buzz(Integer) -> String
+
+Where:
+ - param[0] = an Integer between 1-9999
+ - @return = a String containing either the number or the correct combination of "fizz", "buzz" and "deluxe"

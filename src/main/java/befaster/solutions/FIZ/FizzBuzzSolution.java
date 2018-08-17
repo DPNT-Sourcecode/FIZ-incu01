@@ -42,7 +42,7 @@ public class FizzBuzzSolution {
                 }
             }
         }
-        
+        /*
         if (isDeluxe) {
             if (notFizzBuss) {
                 if (number % 2 == 0) {
@@ -57,6 +57,7 @@ public class FizzBuzzSolution {
                 returnValue.append(" ").append("fake deluxe");
             }
         }
+        */
         return returnValue.toString();
     }
 
