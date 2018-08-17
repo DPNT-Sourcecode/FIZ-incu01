@@ -26,7 +26,9 @@ public class FizzBuzzSolution {
         
         //Check for deluxe
         if (number > 10) {
-            
+            int length = numberAsString.length();
+            String firstChar = numberAsString.substring(0, 1);
+            System.out.println(firstChar);
             //String [] split = String.valueOf(number).
         }
         
