@@ -47,7 +47,15 @@ public class FizzBuzzSolution {
                 returnValue.append("fizz fake deluxe");
             }
         } else if (number % 3 == 0 || containsThree) {
-            returnValue.append("fizz");
+            if (containsThree) {
+                if (number % 2 == 0) {
+                    returnValue.append("fizz deluxe");
+                } else {
+                    returnValue.append("fizz fake deluxe");
+                }
+            } else {
+                returnValue.append("fizz");
+            }
         } else if (number % 5 == 0 && containsFive) {
             if (number % 2 == 0) {
                 returnValue.append("buzz deluxe");
@@ -55,47 +63,20 @@ public class FizzBuzzSolution {
                 returnValue.append("buzz fake deluxe");
             }
         } else if (number % 5 == 0 || containsFive) {
-            returnValue.append("buzz");
+            if (containsFive) {
+                if (number % 2 == 0) {
+                    returnValue.append("buzz deluxe");
+                } else {
+                    returnValue.append("buzz fake deluxe");
+                }
+            } else {
+                returnValue.append("buzz");
+            }
         } else {
             returnValue.append(numberAsString);
-            notFizzBuss = true;
+            //notFizzBuss = true;
         }
 
-        //Check for deluxe
-        /*
-        boolean isDeluxe = false;
-        if (number > 10) {
-            int[] digits = new int[numberAsString.length()];
-
-            for (int i = 0; i < numberAsString.length(); ++i) {
-                digits[i] = Integer.parseInt(numberAsString.substring(i, i + 1));
-            }
-            //String [] split = String.valueOf(number).
-            int baseInt = digits[0];
-            
-            for (int i = 1; i < digits.length; ++i) {
-                isDeluxe = baseInt==digits[i];
-                if (isDeluxe==false) {
-                    break;
-                }
-            }
-        } */
- /*
-        if (isDeluxe) {
-            if (notFizzBuss) {
-                if (number % 2 == 0) {
-                    return "deluxe";
-                } else {
-                    return "fake deluxe";
-                }
-            }
-            if (number % 2 == 0) {
-                returnValue.append(" ").append("deluxe");
-            } else {
-                returnValue.append(" ").append("fake deluxe");
-            }
-        }
-         */
         return returnValue.toString();
     }
 
