@@ -5,7 +5,6 @@
  */
 package befaster.solutions.FIZ;
 
-import static java.sql.DriverManager.println;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import org.junit.After;

@@ -4,10 +4,10 @@ package befaster.solutions.FIZ;
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
-        String numberAsAString = new StringBuilder(number).toString();
-        boolean containsThree = numberAsAString.contains("3");
-        boolean containsFive = numberAsAString.contains("5");
+        boolean containsThree = number.toString().contains("3");
+        boolean containsFive = number.toString().contains("5");
         boolean containsBoth = containsThree&&containsFive;
+        System.out.println(containsBoth);
         if (number % 15 == 0 || (containsBoth)) {
             return "fizz buzz";
         } else
