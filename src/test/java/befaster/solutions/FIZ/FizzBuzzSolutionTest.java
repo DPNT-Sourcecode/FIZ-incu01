@@ -5,6 +5,8 @@
  */
 package befaster.solutions.FIZ;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -27,7 +29,9 @@ public class FizzBuzzSolutionTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void hello() {
-        
+    public void fizzBuzz() {
+        assertThat(fizzBuzzSolution.fizzBuzz(30), equalTo("fizz buzz")); //15
+        assertThat(fizzBuzzSolution.fizzBuzz(10), equalTo("buzz")); // 5
+        assertThat(fizzBuzzSolution.fizzBuzz(9), equalTo("fizz")); //3
     }
 }
