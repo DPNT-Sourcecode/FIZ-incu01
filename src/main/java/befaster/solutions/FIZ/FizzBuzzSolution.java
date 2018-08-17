@@ -84,7 +84,19 @@ public class FizzBuzzSolution {
             } else {
                 returnValue.append("buzz");
             }
-        } else {
+        } else if ( containsFive) {
+            if (number % 5 == 0) {
+                if (number % 2 == 0) {
+                    returnValue.append("buzz deluxe");
+                } else {
+                    returnValue.append("buzz fake deluxe");
+                }
+            } else {
+                returnValue.append("buzz");
+            }
+        }
+        
+        else {
             returnValue.append(numberAsString);
             //notFizzBuss = true;
         }
