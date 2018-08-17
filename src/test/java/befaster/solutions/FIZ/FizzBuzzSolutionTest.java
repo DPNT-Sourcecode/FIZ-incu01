@@ -9,35 +9,25 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Test;
 
 /**
  *
  * @author niyioladeji
  */
 public class FizzBuzzSolutionTest {
-    
-    public FizzBuzzSolutionTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
+    private FizzBuzzSolution fizzBuzzSolution;
     
     @Before
     public void setUp() {
+        fizzBuzzSolution = new FizzBuzzSolution();
     }
     
-    @After
-    public void tearDown() {
-    }
-
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void hello() {
+        
+    }
 }
