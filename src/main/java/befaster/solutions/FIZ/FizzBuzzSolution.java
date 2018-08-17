@@ -6,19 +6,24 @@ public class FizzBuzzSolution {
         boolean containsThree = number.toString().contains("3");
         boolean containsFive = number.toString().contains("5");
         boolean containsBoth = containsThree && containsFive;
+        StringBuilder returnValue = new StringBuilder();
+        boolean notFizzBuss = false;
         if (number % 15 == 0 || (containsBoth)) {
-            return "fizz buzz";
+            returnValue.append("fizz buzz") ;
         } else if (number % 5 == 0 && containsThree) {
-            return "fizz buzz";
+            returnValue.append("fizz buzz") ;
         } else if (number % 3 == 0 && containsFive) {
-            return "fizz buzz";
+            returnValue.append("fizz buzz") ;
         } else if (number % 3 == 0 || containsThree) {
-            return "fizz";
+            returnValue.append("fizz");
         } else if (number % 5 == 0 || containsFive) {
-            return "buzz";
+            returnValue.append("buzz");
         } else {
-            return String.valueOf(number);
+            returnValue.append(String.valueOf(number));
+            notFizzBuss = true;
         }
+        
+        return returnValue.toString();
     }
 
 }
