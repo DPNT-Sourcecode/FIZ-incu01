@@ -23,6 +23,11 @@ public class FizzBuzzSolution {
             notFizzBuss = true;
         }
         
+        //Check for deluxe
+        if (number > 10) {
+            
+        }
+        
         return returnValue.toString();
     }
 
