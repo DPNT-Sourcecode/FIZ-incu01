@@ -54,7 +54,7 @@ public class FizzBuzzSolution {
             if (number % 2 == 0) {
                 returnValue.append(" ").append("deluxe");
             } else {
-                return "fake deluxe";
+                returnValue.append(" ").append("fake deluxe");
             }
         }
         return returnValue.toString();
