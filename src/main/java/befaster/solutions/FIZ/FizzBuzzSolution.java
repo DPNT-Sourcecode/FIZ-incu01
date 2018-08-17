@@ -10,9 +10,25 @@ public class FizzBuzzSolution {
         StringBuilder returnValue = new StringBuilder();
         boolean notFizzBuss = false;
         if (number % 15 == 0 || (containsBoth)) {
-            returnValue.append("fizz buzz");
+            if (containsFive || containsThree) {
+                if (number % 2 == 0) {
+                    returnValue.append("fizz buzz deluxe");
+                } else {
+                    returnValue.append("fizz buzz fake deluxe");
+                }
+            } else {
+                returnValue.append("fizz buzz");
+            }
         } else if (number % 5 == 0 && containsThree) {
-            returnValue.append("fizz buzz");
+            if (containsFive || containsThree) {
+                if (number % 2 == 0) {
+                    returnValue.append("fizz buzz deluxe");
+                } else {
+                    returnValue.append("fizz buzz fake deluxe");
+                }
+            } else {
+                returnValue.append("fizz buzz");
+            }
         } else if (number % 3 == 0 && containsFive) {
             if (containsFive || containsThree) {
                 if (number % 2 == 0) {
