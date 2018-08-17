@@ -10,9 +10,9 @@ public class FizzBuzzSolution {
         if (number % 15 == 0 || (containsThree&&containsFive)) {
             return "fizz buzz";
         } else
-        if (number % 3 == 0) {
+        if (number % 3 == 0 || containsThree) {
             return "fizz";
-        } else if (number % 5 == 0) {
+        } else if (number % 5 == 0 || containsFive) {
             return "buzz";
         } else {
             return String.valueOf(number);
