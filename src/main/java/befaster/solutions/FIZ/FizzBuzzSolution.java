@@ -7,6 +7,7 @@ public class FizzBuzzSolution {
         String numberAsAString = new StringBuilder(number).toString();
         boolean containsThree = numberAsAString.contains("3");
         boolean containsFive = numberAsAString.contains("5");
+        
         if (number % 15 == 0 || (containsThree&&containsFive)) {
             return "fizz buzz";
         } else

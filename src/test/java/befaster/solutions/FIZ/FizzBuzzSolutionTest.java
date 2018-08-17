@@ -5,6 +5,7 @@
  */
 package befaster.solutions.FIZ;
 
+import static java.sql.DriverManager.println;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import org.junit.After;
@@ -34,9 +35,10 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzzSolution.fizzBuzz(10), equalTo("buzz")); // 5
         assertThat(fizzBuzzSolution.fizzBuzz(9), equalTo("fizz")); //3
         assertThat(fizzBuzzSolution.fizzBuzz(8), equalTo("8")); //None 3 & 5
+        println(fizzBuzzSolution.fizzBuzz(35));
         assertThat(fizzBuzzSolution.fizzBuzz(35), equalTo("fizz buzz")); //None 3 & 5
         assertThat(fizzBuzzSolution.fizzBuzz(57), equalTo("fizz buzz")); //None 3 & 5
-        assertThat(fizzBuzzSolution.fizzBuzz(35), equalTo("fizz")); //None 34
+        assertThat(fizzBuzzSolution.fizzBuzz(34), equalTo("fizz")); //None 34
         assertThat(fizzBuzzSolution.fizzBuzz(55), equalTo("buzz")); //None 52
     }
 }
