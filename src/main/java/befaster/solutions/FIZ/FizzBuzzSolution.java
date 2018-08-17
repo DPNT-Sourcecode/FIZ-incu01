@@ -15,16 +15,33 @@ public class FizzBuzzSolution {
             returnValue.append("fizz buzz");
         } else if (number % 3 == 0 && containsFive) {
             returnValue.append("fizz buzz");
-        } else if (number % 3 == 0 || containsThree) {
+        }
+        //Fizz deluxe / Fizz fake deluxe
+        else if (number % 3 == 0 && containsThree) {
+            if (number % 2 == 0) {
+                returnValue.append("fizz deluxe");
+            } else {
+                returnValue.append("fizz fake deluxe");
+            }
+        }
+        else if (number % 3 == 0 || containsThree) {
             returnValue.append("fizz");
+        } else if (number % 5 == 0 && containsFive) {
+            if (number % 2 == 0) {
+                returnValue.append("buzz deluxe");
+            } else {
+                returnValue.append("buzz fake deluxe");
+            }
         } else if (number % 5 == 0 || containsFive) {
             returnValue.append("buzz");
-        } else {
+        }
+        else {
             returnValue.append(numberAsString);
             notFizzBuss = true;
         }
 
         //Check for deluxe
+        /*
         boolean isDeluxe = false;
         if (number > 10) {
             int[] digits = new int[numberAsString.length()];
@@ -41,8 +58,8 @@ public class FizzBuzzSolution {
                     break;
                 }
             }
-        }
-        /*
+        } */
+ /*
         if (isDeluxe) {
             if (notFizzBuss) {
                 if (number % 2 == 0) {
@@ -57,7 +74,7 @@ public class FizzBuzzSolution {
                 returnValue.append(" ").append("fake deluxe");
             }
         }
-        */
+         */
         return returnValue.toString();
     }
 
