@@ -6,6 +6,7 @@ public class FizzBuzzSolution {
         boolean containsThree = number.toString().contains("3");
         boolean containsFive = number.toString().contains("5");
         boolean containsBoth = containsThree && containsFive;
+        String numberAsString =  String.valueOf(number);
         StringBuilder returnValue = new StringBuilder();
         boolean notFizzBuss = false;
         if (number % 15 == 0 || (containsBoth)) {
@@ -19,13 +20,14 @@ public class FizzBuzzSolution {
         } else if (number % 5 == 0 || containsFive) {
             returnValue.append("buzz");
         } else {
-            returnValue.append(String.valueOf(number));
+            returnValue.append(numberAsString);
             notFizzBuss = true;
         }
         
         //Check for deluxe
         if (number > 10) {
             
+            //String [] split = String.valueOf(number).
         }
         
         return returnValue.toString();
