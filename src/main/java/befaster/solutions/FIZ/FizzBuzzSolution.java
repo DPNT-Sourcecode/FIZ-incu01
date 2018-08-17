@@ -42,18 +42,14 @@ public class FizzBuzzSolution {
             } else {
                 returnValue.append("fizz buzz");
             }
-        } else if (number % 5 == 0 && containsThree) {
-            if (containsFive || containsThree) {
+        } else if (number % 3 == 0 && containsFive) {
+            if (containsThree) {
                 if (number % 2 == 0) {
                     returnValue.append("fizz buzz deluxe");
                 } else {
                     returnValue.append("fizz buzz fake deluxe");
                 }
-            } else {
-                returnValue.append("fizz buzz");
-            }
-        } else if (number % 3 == 0 && containsFive) {
-            if (containsFive || containsThree) {
+            } else if (number % 5 == 0) {
                 if (number % 2 == 0) {
                     returnValue.append("fizz buzz deluxe");
                 } else {
